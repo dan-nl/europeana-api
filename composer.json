@@ -1,0 +1,32 @@
+{
+	"name": "europeana/api",
+	"description": "php classes that implement europeana’s api v2",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "dan entous",
+			"email": "dan.entous@pennlinepublishing.com"
+		}
+	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/pennline/http"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/pennline/php"
+		}
+	],
+	"require": {
+		"php": ">=5.3.28",
+		"pennline/http": "dev-master",
+		"pennline/php": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Europeana\\Api\\": ""
+		}
+	},
+	"minimum-stability": "dev"
+}
