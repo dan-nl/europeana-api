@@ -96,15 +96,18 @@ class Request {
 			);
 
 		// replace known character issues
-		// quotes can be converted to entities when the string comes from a form field
+		// quotes can be converted to entities when the string comes from a form field or
+		// has been preocessed by a sanitize string filter
 		$result = str_replace(
 			array(
 				'&#34;',
-				'&#39;'
+				'&#39;',
+				' '
 			),
 			array(
 				'"',
-				"'"
+				"'",
+				'+'
 			),
 			$result
 		);
