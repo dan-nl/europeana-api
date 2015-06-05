@@ -102,7 +102,7 @@ class Search extends Request {
 			$data = $this->buildQueryParams();
 		}
 
-		return parent::post( $this->endpoint, $data );
+		return parent::get( $this->endpoint, $data );
 	}
 
 	protected function init() {
